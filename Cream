@@ -12,22 +12,22 @@ local redzlib = {
 	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(5, 5, 10)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 0, 60)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 0, 120))
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(35, 10, 60)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(65, 20, 110)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(95, 40, 150))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(10, 10, 20),
-			["Color Stroke"] = Color3.fromRGB(50, 0, 90),
-			["Color Theme"] = Color3.fromRGB(150, 120, 255),
-			["Color Text"] = Color3.fromRGB(230, 230, 255),
-			["Color Dark Text"] = Color3.fromRGB(150, 150, 200)
+			["Color Hub 2"] = Color3.fromRGB(45, 20, 80),
+			["Color Stroke"] = Color3.fromRGB(100, 60, 160),
+			["Color Theme"] = Color3.fromRGB(170, 130, 255),
+			["Color Text"] = Color3.fromRGB(235, 225, 255),
+			["Color Dark Text"] = Color3.fromRGB(160, 140, 200)
 		}
 	},
 	Info = {
 		Version = "1.1.0"
 	},
 	Save = {
-		UISize = {550, 380},
+		UISize = {600, 480},
 		TabSize = 160,
 		Theme = "Darker"
 	},
@@ -2639,7 +2639,7 @@ function redzlib:MakeWindow(Configs)
 				Size = UDim2.new(1, -14, 0, 16),
 				AnchorPoint = Vector2.new(0.5, 1),
 				Position = UDim2.new(0.5, 0, 1, -7),
-				Text = "Join",
+				Text = "Link aqui",
 				Font = Enum.Font.GothamBold,
 				TextSize = 12,
 				TextColor3 = Color3.fromRGB(220, 220, 220),
@@ -2653,7 +2653,7 @@ function redzlib:MakeWindow(Configs)
 				
 				ClickDelay = true
 				SetProps(JoinButton, {
-					Text = "Copied to Clipboard",
+					Text = "Copie o Link aqui",
 					BackgroundColor3 = Color3.fromRGB(100, 100, 100),
 					TextColor3 = Color3.fromRGB(150, 150, 150)
 				})task.wait(5)
