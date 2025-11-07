@@ -12,22 +12,22 @@ local redzlib = {
 	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 255)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(100, 100, 255)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(200, 180, 255)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(180, 160, 235)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(160, 140, 215))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(230, 230, 230),
-			["Color Stroke"] = Color3.fromRGB(50, 50, 120),
-			["Color Theme"] = Color3.fromRGB(0, 0, 200),
+			["Color Hub 2"] = Color3.fromRGB(190, 170, 245),
+			["Color Stroke"] = Color3.fromRGB(170, 150, 225),
+			["Color Theme"] = Color3.fromRGB(210, 190, 250),
 			["Color Text"] = Color3.fromRGB(255, 255, 255),
-			["Color Dark Text"] = Color3.fromRGB(200, 200, 200)
+			["Color Dark Text"] = Color3.fromRGB(240, 240, 240)
 		}
 	},
 	Info = {
 		Version = "1.1.0"
 	},
 	Save = {
-		UISize = {550, 380},
+		UISize = {350, 300},
 		TabSize = 160,
 		Theme = "Darker"
 	},
@@ -732,7 +732,7 @@ local redzlib = {
 			["siren"] = "rbxassetid://10734961284",
 			["skipback"] = "rbxassetid://10734961526",
 			["skipforward"] = "rbxassetid://10734961809",
-			["skull"] = "rbxassetid://10734962068",
+			["skull"] = "rbxassetid://6737559631",
 			["slack"] = "rbxassetid://10734962339",
 			["slash"] = "rbxassetid://10734962600",
 			["slice"] = "rbxassetid://10734963024",
@@ -2639,7 +2639,7 @@ function redzlib:MakeWindow(Configs)
 				Size = UDim2.new(1, -14, 0, 16),
 				AnchorPoint = Vector2.new(0.5, 1),
 				Position = UDim2.new(0.5, 0, 1, -7),
-				Text = "Join",
+				Text = "Link aqui",
 				Font = Enum.Font.GothamBold,
 				TextSize = 12,
 				TextColor3 = Color3.fromRGB(220, 220, 220),
@@ -2653,7 +2653,7 @@ function redzlib:MakeWindow(Configs)
 				
 				ClickDelay = true
 				SetProps(JoinButton, {
-					Text = "Copied to Clipboard",
+					Text = "Copie o Link aqui",
 					BackgroundColor3 = Color3.fromRGB(100, 100, 100),
 					TextColor3 = Color3.fromRGB(150, 150, 150)
 				})task.wait(5)
