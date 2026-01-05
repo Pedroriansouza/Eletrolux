@@ -1540,8 +1540,8 @@ local ParticleContainer = Create("Frame", Containers, {
 	local ParticleConfig = {
 		MaxParticles = 50,
 		SpawnRate = 0.1,
-		ParticleSize = {Min = 20, Max = 40},
-		ParticleSpeed = {Min = 12, Max = 23},
+		ParticleSize = {Min = 5, Max = 15},
+		ParticleSpeed = {Min = 5, Max = 20},
 		ParticleLifetime = 6
 	}
 
